@@ -10,6 +10,7 @@
 button {
   background-color: #fddfe4;
   font-size: 1.5rem;
+  margin: .2rem;
 }
 
 button:hover {
@@ -20,7 +21,9 @@ button:hover {
 .screen {
   background-color: #ddcbce;
   color: #80325f;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: right;
+  padding: 1rem;
 }
 
 .button-panel {
@@ -35,6 +38,16 @@ button:hover {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button-panel .numbers #equals {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+.button-panel .numbers #zero {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
 }
 
 .button-panel .functions {
