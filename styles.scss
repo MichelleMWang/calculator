@@ -1,0 +1,35 @@
+.calculator{
+    background-color: pink; 
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    min-height: 50vh;  
+
+}
+button{
+    background-color:rgb(253, 223, 228);
+    font-size: 1.5rem;
+    &:hover{
+        background-color:rgb(255, 214, 221); 
+        cursor: pointer; 
+    }
+
+}
+.screen{
+    background-color:rgb(221, 203, 206); 
+    color:rgb(128, 50, 95); 
+    font-size: 2rem;
+}
+.button-panel{
+    display: grid; 
+    grid-template-columns: 3fr 1fr;
+     
+    .numbers{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+    .functions{
+        display: grid; 
+        grid-template-columns: 1fr;
+    }
+    
+}

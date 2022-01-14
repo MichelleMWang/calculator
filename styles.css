@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.calculator {
+  background-color: pink;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 6fr;
+      grid-template-rows: 1fr 6fr;
+  min-height: 50vh;
+}
+
+button {
+  background-color: #fddfe4;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #ffd6dd;
+  cursor: pointer;
+}
+
+.screen {
+  background-color: #ddcbce;
+  color: #80325f;
+  font-size: 2rem;
+}
+
+.button-panel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+}
+
+.button-panel .numbers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button-panel .functions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+/*# sourceMappingURL=styles.css.map */
