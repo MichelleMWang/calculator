@@ -2,6 +2,7 @@ const nums = document.querySelectorAll('.num-but');
 const funcs = document.querySelectorAll('.func-but'); 
 const screen = document.querySelector('.screen'); 
 const equals = document.querySelector('.equals'); 
+const clear = document.querySelector('.clear'); 
 
 let chosen = []; 
 let term = 0; 
@@ -55,8 +56,11 @@ function equalsMethod(chosenNum){
     }
     displayAndReset(result);  
 }
-
-
+ clear.addEventListener('click', () => {
+    chosen = []; 
+    term = 0; 
+    screen.textContent = 0; 
+ }); 
 
 function add(num1, num2) {
 	return +num1 + +num2; 
@@ -74,6 +78,6 @@ function multiply(num1, num2) {
   return +num1 * +num2; 
 };
 
-function power(num1, num2) {
-	return Math.pow(num1, num2); 
+function divide(num1, num2) {
+	return +num1 / +num2; 
 };
